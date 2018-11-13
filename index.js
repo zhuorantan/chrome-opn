@@ -1,5 +1,6 @@
 'use strict';
 const opn = require('opn');
+const execSync = require('child_process').execSync;
 
 function getChromeAppName() {
   switch (process.platform) {
@@ -13,6 +14,18 @@ function getChromeAppName() {
 }
 
 module.exports = (url, args, wait) => {
+  if (process.platform === 'darwin') {
+    try {
+      // Close duplicate tabs in macOS
+      execSync('osascript closeChromeTab.applescript ' + url, {
+        cwd: __dirname,
+        stdio: 'ignore',
+      });
+    } catch (err) {
+      // Ignore errors.
+    }
+  }
+
   const appName = getChromeAppName();
   const app = args ? [appName, ...args] : appName;
 
