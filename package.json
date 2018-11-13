@@ -1,0 +1,25 @@
+{
+  "name": "chrome-opn",
+  "version": "1.0.0",
+  "description": "A node module to open URLs via Chrome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://JeromeTan1997@github.com/JeromeTan1997/chrome-opn"
+  },
+  "author": "Jerome Tan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JeromeTan1997/chrome-opn/issues"
+  },
+  "homepage": "https://github.com/JeromeTan1997/chrome-opn#readme",
+  "dependencies": {
+    "opn": "^5.4.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
+}
