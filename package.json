@@ -1,7 +1,7 @@
 {
   "name": "chrome-opn",
   "version": "1.0.0",
-  "description": "A node module to open URLs via Chrome",
+  "description": "A wrapper of opn. Opens URLs in Chrome.",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
@@ -10,6 +10,17 @@
     "type": "git",
     "url": "https://JeromeTan1997@github.com/JeromeTan1997/chrome-opn"
   },
+  "keywords": [
+    "opn",
+    "chrome",
+    "brower",
+    "url",
+    "urls",
+    "website",
+    "tab",
+    "applescript",
+    "duplicate"
+  ],
   "author": "Jerome Tan",
   "license": "MIT",
   "bugs": {
